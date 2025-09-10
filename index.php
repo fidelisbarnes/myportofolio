@@ -149,24 +149,26 @@
             <div class="row mt-4 d-flex align-items-stretch">
                 <div class="col-md-4 d-flex">
                     <div class="card shadow-sm p-3 w-100">
-                        <a href="https://instagram.com/komsoshkysukoharjo" target="_blank" class="logo-link">
-                            <img src="img/ig.png" alt="Instagram" class="logo-img" width="100%">
+                        <a href="https://instagram.com/komsoshkysukoharjo" target="_blank" class="logo-link" data-bs-toggle="tooltip"
+                data-bs-placement="top">
+                            <img src="img/ig.png" alt="Instagram" class="img-fluid logo-hover mb-4" width="100%">
                         </a>
                         <p class="mt-3">Tap this! To see our Instagram!</p>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex">
                     <div class="card shadow-sm p-3 w-100">
-                        <a href="https://maps.app.goo.gl/ZAWqSHBRf8m2amnQA" target="_blank" class="logo-link">
-                            <img src="img/maps.png" alt="Google Map" class="logo-img" width="100%">
+                        <a href="https://maps.app.goo.gl/ZAWqSHBRf8m2amnQA" target="_blank" class="logo-link" data-bs-toggle="tooltip"
+                data-bs-placement="top">
+                            <img src="img/maps.png" alt="Google Map" class="img-fluid logo-hover mb-4" width="100%">
                         </a>
                         <p class="mt-3">Tap this! To see us on Google Maps!</p>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex">
                     <div class="card shadow-sm p-3 w-100">
-                        <a href="https://youtube.com/Komsoshkysukoharjo" target="_blank" class="logo-link">
-                            <img src="img/yt.png" alt="YouTube" class="logo-img" width="100%">
+                        <a href="https://www.youtube.com/@Komsoshkysukoharjo" target="_blank" class="logo-link">
+                            <img src="img/yt.png" alt="YouTube"class="img-fluid logo-hover mb-4" width="100%">
                         </a>
                         <p class="mt-3">Tap this! To see our YouTube!</p>
                     </div>
@@ -247,9 +249,11 @@
     </footer>
 
     <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    	const tooltipList = [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
         const sections = document.querySelectorAll("section");
         const navLinks = document.querySelectorAll(".nav-link");
-
+		
         window.addEventListener("scroll", () => {
             let current = "";
 
