@@ -1,8 +1,8 @@
 <?php
 $host = "localhost"; // sesuaikan
-$user = "root";      // sesuaikan
-$pass = "";          // sesuaikan
-$db   = "komsos_db";    // sesuaikan
+$user = "user20232019";      // sesuaikan
+$pass = "Pd4VjG";          // sesuaikan
+$db   = "user20232019";    // sesuaikan
 
 $conn = mysqli_connect($host, $user, $pass, $db);
 
