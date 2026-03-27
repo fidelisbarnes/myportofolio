@@ -1,0 +1,172 @@
+/* HERO SECTION */
+.hero {
+  background: #8a9df2;
+  padding: 80px 0;
+}
+
+.hero h1 {
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero .super {
+  display: block;
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+/* FUTURE SECTION */
+.future {
+  background: #ffdd76;
+}
+
+.future h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+/* FUTURE SECTION */
+.about {
+  background: #ffdd76;
+}
+
+.about h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* SEE US  */
+.how {
+  background: #ff9c9c;
+  font-weight: bolder;
+}
+
+.how h2 {
+  font-weight: bolder;
+  font-size: 80px;
+}
+
+.card {
+  border-radius: 10px;
+  font-weight: normal;
+
+}
+
+
+/* Tinggi fix untuk carousel */
+.custom-carousel {
+  max-width: 600px;
+  /* lebar bisa disesuaikan */
+  height: 350px;
+  /* tinggi fix (misalnya 350px untuk rasio 16:9) */
+  margin-left: auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.custom-carousel:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Gambar menyesuaikan bentuk carousel */
+.carousel-img {
+  width: auto;
+  height: auto;
+  object-fit: scale-down;
+  /* crop otomatis */
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 300px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: rgba(0, 0, 0, 0.4);
+  /* hitam transparan */
+}
+
+.carousel-indicators .active {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* lebih pekat untuk slide aktif */
+}
+
+.carousel-caption {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  /* biar tetap di dalam gambar */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  /* Overlay semi transparan */
+  padding: 10px 15px;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  margin: 0;
+  color: #fff;
+  /* Putih biar kontras */
+}
+
+
+
+/* Navbar title agar responsif */
+.site-title {
+  font-size: 1rem;
+  /* default */
+  white-space: normal;
+  /* biar bisa turun baris kalau terlalu panjang */
+}
+
+@media (max-width: 576px) {
+  .site-title {
+    font-size: 0.75rem;
+    /* lebih kecil di layar kecil */
+  }
+}
+
+.future-img {
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  /* shadow bulat */
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.about-img {
+  width: 100%;
+  filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.4));
+}
+
+.logo-link {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.logo-img {
+  transition: transform 0.3s ease;
+}
+
+.logo-link:hover .logo-img {
+  transform: scale(1.3);
+}
+
+.map-container {
+  overflow: hidden;
+  border-radius: 10px;
+}
